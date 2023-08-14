@@ -9,34 +9,7 @@ import { model } from "mongoose";
 const AddCar = () => {
   const [isLogged, setIsLogged] = useState(false);
   const [userName, setUserName] = useState(false);
-
-  // useEffect(() => {
-  //   checkSession();
-  // }, [isLogged]);
-
-  // const checkSession = () => {
-  //   const request = new Request("http://localhost:5000/checkSession", {
-  //     method: "GET",
-  //     credentials: "include",
-  //     headers: new Headers({ "Content-Type": "application/json" }),
-  //   });
-  //   fetch(request)
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         setIsLogged(true);
-  //         return response.json();
-  //       } else {
-  //         console.log("Użytkownik nie zalogowany");
-  //         window.location.href = "/";
-  //       }
-  //     })
-  //     .then((data) => {
-  //       setUserName(data ? data.name : null);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // };
+  
   const title = (
     <p>
       Adding new car to your <strong>fleet</strong>.
